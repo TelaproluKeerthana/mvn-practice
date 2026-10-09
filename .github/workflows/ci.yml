@@ -24,3 +24,6 @@ jobs:
 
       - name: Build and test
         run: mvn --batch-mode --no-transfer-progress clean verify
+	  
+	  - name: Build Docker image
+		run: docker build -t mvn-practice:1.0 .
